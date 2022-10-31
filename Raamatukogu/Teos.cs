@@ -15,13 +15,13 @@ namespace Raamatukogu
 
 
 
-    public Teos(string kirjeldus, string teoseTähis, string laenutaja, int päevadeArv)
-    {
-        this.kirjeldus = kirjeldus;
-        this.teoseTähis = teoseTähis;
-        this.laenutaja = laenutaja;
-        this.päevadeArv = päevadeArv;
-    }
+        public Teos(string kirjeldus, string teoseTähis, string laenutaja, int päevadeArv)
+        {
+            this.kirjeldus = kirjeldus;
+            this.teoseTähis = teoseTähis;
+            this.laenutaja = laenutaja;
+            this.päevadeArv = päevadeArv;
+        }
 
         public abstract bool KasHoidlast();
 
