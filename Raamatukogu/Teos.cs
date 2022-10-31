@@ -86,7 +86,7 @@ namespace Raamatukogu
                     '}';
         }
 
-        public  int CompareTo(Teos? other)
+        public int CompareTo(Teos? other)
         {
             if (other == null) return 1;
             return kirjeldus.CompareTo(other.kirjeldus);

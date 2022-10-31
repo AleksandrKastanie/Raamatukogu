@@ -10,8 +10,9 @@ namespace Raamatukogu
     {
         private int aasta;
 
-        public Ajakiri(string kirjeldus, string teoseTähis, string laenutaja, int päevadeArv) : base(kirjeldus, teoseTähis, laenutaja, päevadeArv)
+        public Ajakiri(string kirjeldus, string teoseTähis, string laenutaja, int päevadeArv, int aasta) : base(kirjeldus, teoseTähis, laenutaja, päevadeArv)
         {
+            this.aasta = aasta;
         }
         override public bool KasHoidlast()
         {
