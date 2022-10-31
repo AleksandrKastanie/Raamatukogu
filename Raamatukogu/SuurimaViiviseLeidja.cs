@@ -14,13 +14,15 @@ namespace Raamatukogu
         public SuurimaViiviseLeidja()
         {
             suurimViivis = 0;
+            laenutaja = "";
+            teoseKirjeldus = "";
         }
-        void saadaHoiatus()
+        public void saadaHoiatus()
         {
-            Console.WriteLine(laenutaja + ", " + teoseKirjeldus);
+            Console.WriteLine("Suurim võlg on: "  + laenutaja + ", " + teoseKirjeldus);
         }
         
-        public void salvestaViivis(String laenutajaNimi, String teoseKirjeldus, double viiviseSuurus)
+        public void salvestaViivis(string laenutajaNimi, string teoseKirjeldus, double viiviseSuurus)
         {
             if (viiviseSuurus > suurimViivis)
             {
